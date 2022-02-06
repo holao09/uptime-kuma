@@ -3,6 +3,14 @@ WORKDIR /app
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
 
+RUN apt-get update -y \
+  && apt-get install -y \
+  curl \
+  sudo \
+  build-essential \
+  python \
+  && apt-get clean
+
 COPY . .
 RUN npm ci --production && \
     chmod +x /app/extra/entrypoint.sh
