@@ -44,7 +44,7 @@ class Teams extends NotificationProvider {
             });
         }
 
-        if (monitorUrl) {
+        if (monitorUrl && monitorUrl.length > 8) {
             facts.push({
                 name: "URL",
                 value: monitorUrl,
