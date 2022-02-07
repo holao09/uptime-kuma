@@ -59,8 +59,8 @@ class Teams extends NotificationProvider {
             sections: [
                 {
                     activityImage:
-                        "https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.png",
-                    activityTitle: "**Uptime Kuma**",
+                        "https://raw.githubusercontent.com/holao09/uptime-kuma/master/public/icon.png",
+                    activityTitle: "**Team Bot**",
                 },
                 {
                     activityTitle: notificationMessage,
